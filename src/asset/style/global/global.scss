@@ -1,0 +1,106 @@
+.container {
+	$desktop: $containerMargin * 2;
+	$tablet: $containerMargin-tablet * 2;
+	$mobile: $containerMargin-mobile * 2;
+
+	margin: 0 auto;
+	width: calc(100% - #{$desktop});
+	max-width: $container;
+
+	@include tablet {
+		width: calc(100% - #{$tablet});
+	}
+
+	@include mobile {
+		width: calc(100% - #{$mobile});
+	}
+}
+
+.rte {
+	@extend .ui-p;
+
+  a {
+    @extend .ui-a;
+		text-decoration: underline;
+  }
+
+  h1 {
+    @extend .ui-h1;
+  }
+
+  h2 {
+    @extend .ui-h2;
+  }
+
+  h3 {
+    @extend .ui-h3;
+  }
+
+  img {
+    @extend .ui-img;
+  }
+
+  p {
+    @extend .ui-p;
+  }
+
+  em {
+    @extend .ui-em;
+  }
+
+  ol {
+    @extend .ui-ol;
+  }
+
+  ul {
+    @extend .ui-ul;
+  }
+}
+
+.is-Facebook {
+  &:hover {
+    path {
+      fill: #3b5998;
+    }
+  }
+}
+
+.is-Instagram {
+  &:hover {
+    path {
+      fill: #C13584;
+    }
+  }
+}
+
+.is-Whatsapp {
+  &:hover {
+    path {
+      fill: #25d366;
+    }
+  }
+}
+
+.is-Linkedin {
+  &:hover {
+    path {
+      fill: #0e76a8;
+    }
+  }
+}
+
+.is-Youtube {
+  &:hover {
+    path {
+      fill: #c4302b;
+    }
+  }
+}
+
+.is-Twitter {
+  &:hover {
+    path {
+      fill: #1DA1F2;
+    }
+  }
+}

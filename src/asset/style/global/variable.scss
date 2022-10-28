@@ -1,0 +1,41 @@
+/*
+ * Colors
+ */
+
+$color-primary: $color-black;
+$color-secondary: $color-black;
+$color-tertiary: $color-black;
+$color-failure: $color-black;
+$color-success: $color-black;
+$color-text: $color-black;
+$color-border: $color-black;
+
+
+/*
+ * Fonts
+ */
+$font-cabin: 'cabin', sans-serif;
+$font-lexend: 'lexend', sans-serif;
+
+$font-text: $font-cabin;
+$font-title: $font-lexend;
+
+
+/*
+ * Media query sizes
+ */
+
+$mq-tab: 1024px;
+$mq-tab-portrait: 834px;
+$mq-mob: 480px;
+$mq-mob-portrait: 320px;
+
+/*
+ * Global
+ */
+$container: 1440px;
+$containerMargin: 40px;
+$containerMargin-tablet: 25px;
+$containerMargin-mobile: 15px;
+$border-radius: 8px;
+$box-shadow: 0px 12px 32px rgba(157, 157, 157, 0.24);
