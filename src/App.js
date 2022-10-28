@@ -1,8 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import axios from 'axios';
+
 
 function App() {
+  axios.get('http://localhost:1337/api/projects').then(response => {
+    console.log(response);
+  });
+
   return (
     <div className="App">
       <header className="App-header">
