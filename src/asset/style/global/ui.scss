@@ -20,6 +20,20 @@
 
 .ui-h1 {
 	display: block;
+	color: $color-black-4;
+	font-family: Roboto;
+	font-size: 38px;
+	text-transform: uppercase;
+
+	&.is-big {
+    font-size: 90px;
+    font-weight: bold;
+	}
+
+	&.is-medium {
+		font-size: 54px;
+    font-weight: bold;
+	}
 }
 
 .ui-h2 {

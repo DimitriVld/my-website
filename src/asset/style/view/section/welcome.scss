@@ -1,0 +1,50 @@
+.s-welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.home {
+      background-color: rgba($color-cyan,.65);
+  }
+
+  &.services,
+  &.about {
+      background-color: $color-white;
+
+      *{
+          color: $color-black-4;
+      }
+  }
+
+  &-logo {
+      position: absolute;
+      right: 0;
+      top: -5px;
+  }
+
+  &-title {
+      width: 50%;
+      margin-bottom: 20px;
+      color: $color-white;
+  }
+
+  &-subtitle {
+      width: 50%;
+      color: $color-white;
+  }
+
+  &-scroll {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      padding-top: 8px;
+      border-top: solid 1px $color-white;
+      color: $color-white;
+      font-size: 12px;
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+  }
+}
