@@ -16,7 +16,40 @@
     }
 
     &-link {
+        margin-top: 20px;
+        margin-left: -20px;
+        font-weight: 700;
         opacity: 0;
-        transform: translateX(-50%);
+        transform: translateX(-200%);
+        transition: opacity 500ms, margin-left 500ms;
+
+        @include tabletPortrait {
+          margin-left: 0;
+        }
+
+        &:hover {
+          opacity: 1 !important;
+          
+          @include tabletPortraitMin {
+            margin-left: 0;
+  
+            span {
+              opacity: 1;
+            }
+          }
+        }
+
+        span {
+          margin-right: 5px;  
+          font-size: 15px;
+          font-weight: 400;
+          opacity: 0;
+          transition: opacity 500ms;
+          vertical-align: super;
+
+          @include tabletPortrait {
+            opacity: 1;
+          }
+        }
     }
 }
