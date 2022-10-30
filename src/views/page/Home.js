@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <WelcomeSection
-        title='Ad agency'
+        title='Dimitri Vildina'
         subTitle='We create & build digital solution'
       />
     </div>

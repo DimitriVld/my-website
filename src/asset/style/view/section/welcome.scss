@@ -3,6 +3,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &.home {
       background-color: rgba($color-blue,.65);
@@ -19,19 +28,38 @@
 
   &-logo {
       position: absolute;
-      right: 0;
-      top: -5px;
+      right: -100px;
+      top: -150px;
+      width: 747.54px;
+      height: 769.89px;
+      opacity: .5;
+      transform: rotate(15deg);
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
   }
 
   &-title {
+    font-weight: 400;
       width: 50%;
-      margin-bottom: 20px;
       color: $color-white;
+      z-index: 1;
+
+      @include tabletPortrait {
+        width: 100%;
+      }
   }
 
   &-subtitle {
       width: 50%;
       color: $color-white;
+      z-index: 1git;
+
+      @include tabletPortrait {
+        width: 100%;
+      }
   }
 
   &-scroll {

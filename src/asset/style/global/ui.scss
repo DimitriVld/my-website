@@ -22,17 +22,34 @@
 	display: block;
 	color: $color-black-4;
 	font-family: Roboto;
-	font-size: 38px;
+	font-size: 40px;
+	line-height: 47px;
 	text-transform: uppercase;
 
+	@include tabletPortrait {
+		font-size: 30px;
+		line-height: 37px;
+	}
+
 	&.is-big {
-    font-size: 90px;
+    font-size: 100px;
+    line-height: 117px;
     font-weight: bold;
+
+		@include tablet {
+			font-size: 60px;
+			line-height: 75px;
+		}
 	}
 
 	&.is-medium {
 		font-size: 54px;
     font-weight: bold;
+		
+		@include tabletPortrait {
+			font-size: 40px;
+			line-height: 47px;
+		}
 	}
 }
 
