@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import axios from 'axios';
+import './asset/style/style.scss'
 import DefaultLayout from './views/layout/DefaultLayout';
 import HomePage from "./views/page/Home";
 import ServicesPage from "./views/page/Services";

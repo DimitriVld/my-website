@@ -6,7 +6,16 @@
  | |__| | | (_) | |_) | (_| | |
   \_____|_|\___/|_.__/ \__,_|_|
 */
-
+@import "global/mq";
+@import "global/color";
+@import "global/variable";
+@import "global/extend";
+@import "global/font";
+@import "global/default";
+@import "global/keyframe";
+@import "global/reset";
+@import "global/ui";
+@import "global/global";
 
 /*
  __      __            _
@@ -28,7 +37,7 @@
                        | |
                        |_|
 */
-
+@import './view/component/menu.scss';
 
 /*
    _____           _   _

@@ -1,95 +1,9 @@
 .ui-a {
-
-  &.is-animate {
-    position: relative;
-    display: inline-block;
-
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 2px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: currentColor;
-      transform: scaleX(0);
-      transform-origin: right bottom;
-      transition: transform .3s ease-in-out;
-    }
-
-    &:hover {
-      &:after {
-				@include tabletPortraitMin {
-					transform: scaleX(1);
-					transform-origin: left bottom;
-				}
-      }
-    }
-  }
-
-  &.is-reversed {
-    &:after {
-      transform: scaleX(1);
-      transform-origin: left bottom;
-    }
-
-    &:hover {
-      &:after {
-				@include tabletPortraitMin {
-					transform: scaleX(0);
-					transform-origin: right bottom;
-				}
-      }
-    }
-  }
+	display: block;
 }
 
 .ui-button {
-	padding: 6px 12px;
-	width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-	border: 1px solid $color-primary;
-	border-radius: $border-radius;
-	font-family: $font-text;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 24px;
-	background-color: $color-primary;
-	color: $color-white;
-  transition: .3s background;
-
-  &:hover {
-    background: darken($color-primary, 10%);
-  }
-
-  &.is-medium {
-    padding: 10px;
-  }
-
-	&.is-white {
-		background-color: $color-white;
-    border: 0;
-		color: $color-primary;
-
-    &:hover {
-      background: darken($color-white, 4%)
-    }
-	}
-
-  &.is-ghost {
-    background: transparent;
-    border: 0;
-    color: currentColor;
-
-    &:hover {
-      background: darken($color-white, 10%)
-    }
-  }
+	display: block;
 }
 
 .ui-checkbox {
@@ -105,73 +19,27 @@
 }
 
 .ui-h1 {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	color: $color-text;
-	font-family: $font-title;
-	font-size: 56px;
-	line-height: 67px;
-	font-weight: 700;
-
-	@include mobile {
-		margin-top: 10px;
-		font-size: 32px;
-		line-height: 38px;
-	}
-
-	&:first-child {
-		margin-top: 0;
-	}
-
-	&:empty {
-		margin: 0;
-	}
+	display: block;
 }
 
 .ui-h2 {
-	@extend .ui-h1;
-	font-size: 35px;
-	line-height: 42px;
-	font-weight: 500;
-
-	@include tabletPortrait {
-		font-size: 25px;
-		line-height: 30px;
-	}
+	display: block;
 }
 
 .ui-h3 {
-	@extend .ui-h1;
-	font-size: 30px;
-	line-height: 36px;
-
-	@include tabletPortrait {
-		font-size: 20px;
-		line-height: 24px;
-	}
+	display: block;
 }
 
 .ui-h4 {
-	@extend .ui-h1;
-	font-size: 25px;
-	line-height: 30px;
-
-	@include tabletPortrait {
-		font-size: 20px;
-		line-height: 24px;
-	}
+	display: block;
 }
 
 .ui-h5 {
-	@extend .ui-h1;
-	font-size: 20px;
-	line-height: 24px;
+	display: block;
 }
 
 .ui-h6 {
-	@extend .ui-h1;
-	font-size: 16px;
-	line-height: 24px;
+	display: block;
 }
 
 .ui-img {
@@ -179,71 +47,15 @@
 }
 
 .ui-input {
-	width: 100%;
-	padding: 12px 16px;
-	border-radius: 6px;
-	color: $color-text;
-	background-color: $color-greyLight;
-  border: 1px solid $color-greySuperLight;
-	font-family: $font-text;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-
-	&::placeholder {
-		color: rgba($color-greyTips, .5);
-	}
+	display: block;
 }
 
 .ui-label {
 	display: block;
-	margin-bottom: 8px;
-	font-family: $font-text;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 24px;
-	color: $color-text;
-
-	&.is-required {
-
-		&:after {
-			content: ' *';
-			color: $color-immoroot;
-		}
-	}
 }
 
 .ui-p {
-	color: $color-text;
-	font-family: $font-text;
-	font-size: 16px;
-	line-height: 24px;
-
-	&.is-error {
-		color: $color-failure;
-	}
-
-	&.is-medium {
-		font-size: 14px;
-		line-height: 20px;
-	}
-
-	&.is-small {
-		font-size: 12px;
-		line-height: 16px;
-	}
-
-	&.is-caption {
-		margin-top: 2px;
-		font-size: 12px;
-		line-height: 18px;
-	}
-
-	&.is-important {
-		font-weight: 700;
-		color: $color-primary;
-	}
+	display: block;
 }
 
 .ui-radio {
@@ -256,8 +68,6 @@
 
 .ui-textarea {
 	@extend .ui-input;
-	min-height: 160px;
-	resize: none;
 }
 
 .ui-ol {
