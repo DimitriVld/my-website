@@ -1,6 +1,7 @@
 import React from 'react';
 import WelcomeSection from '../section/Welcome';
-import MyJob from '../section/MyJob';
+import MyJobSection from '../section/MyJob';
+import LastProjectsSection from '../section/LastProjects';
 
 const Home = () => { 
 
@@ -10,7 +11,8 @@ const Home = () => {
         title='Dimitri Vildina'
         subTitle='I create & build digital solution'
       />
-      <MyJob />
+      <MyJobSection />
+      <LastProjectsSection />
     </div>
   );
 };

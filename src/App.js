@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import AppContext from './context/AppContext';
 import {
   BrowserRouter,
@@ -18,9 +18,13 @@ import ContactPage from "./views/page/Contact";
 const App = () => {
   const [context, setContext] = useState(null);
 
-  axios.get('http://localhost:1337/api/projects').then(response => {
-    console.log(response.data.data);
-  });
+  useEffect(() => {
+    axios
+      .get('http://localhost:1337/api/projects')
+      .then((response) => setContext(response.data.data))
+      .catch((error) => console.log("erreur"))
+      .finally(() => console.log('okokok'));
+  }, []);
 
   return (
     <AppContext.Provider value={context}>

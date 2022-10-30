@@ -4,22 +4,22 @@ import ArrowRightIcon from '../icon/ArrowRight';
 
 const MyJob = () => {
   return (
-    <div className={"s-section"}>
+    <div className={"s-myJob"}>
       <div className='container'>
-        <div className="s-section-left">
-          <h3 className='ui-h1 is-medium'><hr></hr>Our job</h3>
+        <div className="s-myJob-left">
+          <h3 className='ui-h1 is-medium'><hr></hr>My job</h3>
           <p>
-          Our job is not to create pretty web concepts that are similar to
+          My job is not to create pretty web concepts that are similar to
           you, our job is also to make sure your product is online is more
           efficient, secure and more scalable possible. Your product must
           convert. Your product must differentiate you. That's where we come
           in.
           </p>
         </div>
-        <div className="s-section-right">
+        <div className="s-myJob-right">
           <Link to={'/contact'}>
             Contact us
-            <ArrowRightIcon class="s-section-arrow" />
+            <ArrowRightIcon class="s-myJob-arrow" />
           </Link>
         </div>
       </div>
