@@ -1,11 +1,20 @@
 import React from 'react';
-import Menu from './Menu';
+import { Link } from 'react-router-dom';
+import LogoIcon from '../icon/Logo';
+import BurgerIcon from '../icon/Burger';
 
 const Header = () => {
   return(
-    <div className={'c-header'} >
-      <Menu />
-      <h1> This is a header </h1>
+    <div className={"c-header"}>
+      <div className='container'>
+        <Link to={'/'}>
+          <LogoIcon class='s-header-logo' />
+        </Link>
+
+        <div className="c-header-burger cursor-p" onClick={() => this.toggleMenu()}>
+          <BurgerIcon class='c-header-burgerIcon'/>
+        </div>
+      </div>
     </div>
   )
 }
