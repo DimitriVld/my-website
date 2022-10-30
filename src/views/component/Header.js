@@ -6,7 +6,7 @@ import BurgerIcon from '../icon/Burger';
 const Header = (props) => {
   return (
     <div className={"c-header"}>
-      <div className='container'>
+      <div className='container is-large'>
         <Link to={'/'}>
           <LogoIcon class='s-header-logo' />
         </Link>

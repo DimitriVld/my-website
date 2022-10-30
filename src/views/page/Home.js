@@ -1,5 +1,6 @@
 import React from 'react';
 import WelcomeSection from '../section/Welcome';
+import MyJob from '../section/MyJob';
 
 const Home = () => { 
 
@@ -7,8 +8,9 @@ const Home = () => {
     <div>
       <WelcomeSection
         title='Dimitri Vildina'
-        subTitle='We create & build digital solution'
+        subTitle='I create & build digital solution'
       />
+      <MyJob />
     </div>
   );
 };

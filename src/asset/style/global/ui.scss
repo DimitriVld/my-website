@@ -43,7 +43,8 @@
 	}
 
 	&.is-medium {
-		font-size: 54px;
+		font-size: 64px;
+		line-height: 75px;
     font-weight: bold;
 		
 		@include tabletPortrait {
