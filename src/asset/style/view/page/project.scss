@@ -1,0 +1,88 @@
+.p-project {
+  padding: 90px 0 35px;
+
+  &-header {
+    padding: 50px 0;
+    background-color: rgba($color-blue, .60);
+  }
+
+  &-type {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &-title {
+    margin-top: 15px;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; 
+  }
+
+  &-infos {
+    flex: 1 40%;
+  }
+
+  &-description {
+    color: $color-black-4;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  &-technos {
+    display: flex;
+    margin-top: 20px;
+    color: $color-black-4;
+    font-size: 20px;
+    line-height: 40px;
+
+    ul {
+      margin-left: 5px;
+      padding-left: 5px;
+      border-left: solid 1px $color-black-4;
+    }
+  }
+
+  &-imgWrapper {
+    flex: 1 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      right: 40px;
+      display: block;
+      width: 80%;
+      height: 100%;
+      background-color: rgba($color-blue, .10);
+      z-index: -1;
+    }
+    
+    img{
+      display: block;
+      width: 80%;
+      z-index: 1;
+    }
+  }
+
+  &-link{
+    display: flex;
+    align-items: center;
+    color: $color-blue;
+    text-transform: uppercase;
+  }
+
+  &-arrow{
+    margin-left: 8px;
+  }
+}
