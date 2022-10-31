@@ -1,3 +1,151 @@
 .s-lastProjects {
+  padding-top: 80px;
+
+  &-title {
+    display: flex;
+    align-items: flex-end;
+
+    hr{
+      width: 67px;
+      border: 1px solid $color-black-4;
+      margin: auto 23px auto 0;
+    }
+  }
+
+  &-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 60px 0 0;
+    padding: 70px 0 110px;
+
+    @include tablet {
+      flex-direction: column !important;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      
+      .s-lastProjects-bg {
+          left: initial;
+          right: -$containerMargin;
+      }
+
+      .s-lastProjects-description {
+
+        p {
+          text-align: left;
+          margin-left: 0;
+        }
+
+        a{
+          width: fit-content;
+          margin: 50px auto 0 0;
+        }
+      }
+
+      .s-lastProjects-itemTitle {
+
+        h4 {
+          flex-direction: row-reverse;
+        }
+
+        hr {
+          margin: auto 0 auto 23px;
+        }
+      }
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 30%;
+    background-color: rgba($color-blue, .10);
+    z-index: -1;
+    left: -$containerMargin;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &-itemTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+    h4{
+      display: flex;
+      align-items: flex-end;
+
+      hr {
+        width: 30px;
+        border: 1px solid $color-black-4;
+        margin: auto 23px auto 0;
+      }
+    }
+  }
+
+  &-infos {
+
+    @include tabletPortrait {
+      width: 100%;
+    }
+  }
+
+  &-imgWrapper {
+    display: block;
+    margin-top: 60px;
+    max-width: 85%;
+
+    @include tabletPortrait {
+      max-width: initial;
+
+      span {
+        display: block;
+        width: 100%;
+        line-height: unset;
+      }
   
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+  }
+
+  &-description {
+
+    @include tablet {
+      margin-top: 50px;
+    }
+
+    p{
+      text-align: right;
+      width: 70%;
+      font-size: 24px;
+      line-height: 154.4%;
+      margin-left: auto;
+      margin-right: 0;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+
+    a{
+      width: fit-content;
+      margin: 50px 0 0 auto;
+    }
+  }
+
+  &-btn {
+    width: fit-content;
+    margin: 60px auto;
+  }
 }
