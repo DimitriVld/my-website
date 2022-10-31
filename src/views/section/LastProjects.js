@@ -9,7 +9,7 @@ const LastProjects = () => {
   return (
     <div className={"s-lastProjects"}>
       <div className={'container'}>
-        <h3 className='s-lastProjects-title ui-h1 is-medium'><hr></hr>Our last works</h3>
+        <h3 className='s-lastProjects-title ui-h1 is-medium'><hr></hr>My last works</h3>
         <ul className='s-lastProjects-list'>
           {context && context.map((project) => (
             <li className="s-lastProjects-item" key={project.id}>
@@ -18,14 +18,14 @@ const LastProjects = () => {
                 <Link to={`/work-${project.id}`} className="s-lastProjects-itemTitle ui-h1">
                     <h4><hr></hr>{project.attributes.Title}</h4>
                 </Link>
-                <Link to={'/'} className="s-lastProjects-imgWrapper">
+                <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper">
                   <Desktop />
                 </Link>
               </div>
 
               <div className="s-lastProjects-description">
-                <p>His cognitis Gallus ut serpens adpetitus telo vel saxo iamque spes extremas opperiens et succurrens saluti suae quavis ratione colligi omnes iussit armatos et cum starent attoniti, districta dentium acie stridens adeste inquit viri fortes mihi periclitanti vobiscum.</p>
-                <Link className='ui-button' to={`/work-${project.id}`}>Discover</Link>
+                <p>{project.attributes.Description}</p>
+                <Link className='ui-button' to={`/project/${project.id}`}>Discover</Link>
               </div>
             </li>
           ))}

@@ -35,7 +35,7 @@ const App = () => {
           <Route exact path="/projects" element={<DefaultLayout page={<ProjectsPage />} />} />
           <Route exact path="/about-us" element={<DefaultLayout page={<AboutPage />} />} />
           <Route exact path="/contact" element={<DefaultLayout page={<ContactPage />} />} />
-          <Route exact path="/work" element={<DefaultLayout page={<ProjectPage />} />} />
+          <Route exact path="/project/:projectId" element={<DefaultLayout page={<ProjectPage />} />} />
         </Routes>
       </BrowserRouter>
     </AppContext.Provider>

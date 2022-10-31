@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useParams } from "react-router-dom";
+import AppContext from '../../context/AppContext';
 
-const Project = () => { 
+const Project = () => {
+  let { projectId } = useParams();
+  const context = useContext(AppContext);
+  const project = context?.find(element => element.id == projectId);
 
   return (
     <div>
-      Project
+      {project?.id}
     </div>
   );
 };
