@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import ArrowRightIcon from '../icon/ArrowRight';
+import ChevronRightIcon from '../icon/ChevronRight';
 
 const MyJob = () => {
   return (
@@ -19,7 +19,7 @@ const MyJob = () => {
         <div className="s-myJob-right">
           <Link to={'/contact'}>
             Contact us
-            <ArrowRightIcon class="s-myJob-arrow" />
+            <ChevronRightIcon class="s-myJob-arrow" />
           </Link>
         </div>
       </div>

@@ -20,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:1337/api/projects')
+      .get('http://localhost:1337/api/projects?populate=*')
       .then((response) => setContext(response.data.data))
       .catch((error) => console.log("erreur"))
       .finally(() => console.log('okokok'));

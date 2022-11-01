@@ -1,5 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
 
@@ -19,12 +20,12 @@ const LastProjects = () => {
                     <h4><hr></hr>{project.attributes.Title}</h4>
                 </Link>
                 <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper">
-                  <Desktop />
+                  <Desktop img={project.attributes.Preview.data.attributes.url}/>
                 </Link>
               </div>
 
               <div className="s-lastProjects-description">
-                <p>{project.attributes.Description}</p>
+                <p>{project.attributes.Intro}</p>
                 <Link className='ui-button' to={`/project/${project.id}`}>Discover</Link>
               </div>
             </li>
