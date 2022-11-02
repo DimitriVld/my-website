@@ -19,11 +19,13 @@
 
   &.services,
   &.about {
-      background-color: $color-white;
+    height: auto;
+    padding: 105px 0 75px;
+    background-color: $color-white;
 
-      *{
-          color: $color-black-4;
-      }
+    *{
+        color: $color-black-4;
+    }
   }
 
   &-logo {
@@ -39,6 +41,11 @@
         height: 100%;
         width: 100%;
       }
+  }
+
+  &.services &-logo {
+    width: 547.54px;
+    height: 569.89px;
   }
 
   &-title {
@@ -62,6 +69,14 @@
       }
   }
 
+  .services &-subtitle {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 154.4%;
+    text-transform: initial;
+  }
+
   &-scroll {
       position: absolute;
       bottom: 30px;
@@ -74,5 +89,9 @@
       font-size: 12px;
       text-transform: uppercase;
       transform: rotate(-90deg);
+  }
+
+  .services &-scroll {
+    display: none;
   }
 }
