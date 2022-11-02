@@ -35,10 +35,10 @@ const Project = () => {
           </div>
         </div>
 
-        <Link className='p-project-link' to={project?.attributes.Link}>
+        <a className='p-project-link' href={project?.attributes.Link}>
           <span>Go to the website</span>
           <ArrowRightIcon />
-        </Link>
+        </a>
       </div>
     </div>
   );
