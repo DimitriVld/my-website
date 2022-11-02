@@ -1,0 +1,23 @@
+.s-services {
+  padding: 50px 0;
+  background-color: $color-grey;
+
+  .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .service{
+          flex: 1;
+          padding-left: 10px;
+
+          ul{
+              margin-top: 10px;
+
+              li{
+                  margin-top: 10px;
+              }
+          }
+      }
+  }
+}
