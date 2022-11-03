@@ -1,6 +1,7 @@
 import React from 'react';
 import WelcomeSection from '../section/Welcome';
 import ServicesSection from '../section/Services';
+import Skills from '../section/Skills';
 
 const Services = () => { 
 
@@ -12,6 +13,7 @@ const Services = () => {
         isServices='true'
       />
       <ServicesSection />
+      <Skills />
     </div>
   );
 };
