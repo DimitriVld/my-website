@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <WelcomeSection
         title='Dimitri Vildina'
-        subTitle='I create & build digital solution'
+        subtitle='I create & build digital solution'
       />
       <MyJobSection />
       <LastProjectsSection />

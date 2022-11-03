@@ -17,8 +17,15 @@
       background-color: rgba($color-blue,.65);
   }
 
-  &.services,
   &.about {
+    background-color: $color-white;
+
+    *{
+        color: $color-black-4;
+    }
+  }
+
+  &.services {
     height: auto;
     padding: 105px 0 75px;
     background-color: $color-white;
@@ -89,6 +96,10 @@
       font-size: 12px;
       text-transform: uppercase;
       transform: rotate(-90deg);
+  }
+
+  .about &-scroll {
+    border-top: solid 1px $color-black-4;
   }
 
   .services &-scroll {

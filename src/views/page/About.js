@@ -1,10 +1,15 @@
 import React from 'react';
+import WelcomeSection from '../section/Welcome';
 
 const About = () => { 
 
   return (
     <div>
-      About
+      <WelcomeSection 
+      title='Dimitri Vildina'
+      subtitle='know everything about us'
+      isAbout='true'
+      />
     </div>
   );
 };
