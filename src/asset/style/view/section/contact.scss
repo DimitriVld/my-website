@@ -1,0 +1,29 @@
+.s-contact {
+  padding: 50px 0;
+  background-color: rgba($color-blue, .5);
+
+  h3{
+    color: $color-white;
+  }
+
+  h4{
+      margin-top: 30px;
+      width: 50%;
+      color: $color-white;
+
+      @include tabletPortrait {
+        width: 100%;
+      }
+  }
+
+  &-link {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      color: $color-white;
+
+      span {
+          margin-right: 10px;
+      }
+  }
+}

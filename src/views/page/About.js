@@ -2,6 +2,7 @@ import React from 'react';
 import WelcomeSection from '../section/Welcome';
 import CultureSection from '../section/Culture';
 import VisionSection from '../section/Vision';
+import ContactSection from '../section/Contact';
 
 const About = () => { 
 
@@ -14,6 +15,7 @@ const About = () => {
       />
       <CultureSection />
       <VisionSection />
+      <ContactSection />
     </div>
   );
 };
