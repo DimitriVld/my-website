@@ -1,0 +1,60 @@
+.s-culture{
+  background-color: $grey-greyLight;
+
+  @include tabletPortrait {
+    padding: 40px 0;
+  }
+
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include tabletPortrait {
+        flex-direction: column;
+      }
+
+      h3{
+          flex: 1;
+          font-weight: 600;
+
+          @include tabletPortrait {
+            text-align: center;
+          }
+
+          br {
+
+            @include tabletPortrait {
+              display: none;
+            }
+          }
+      }
+
+      .cultures{
+          flex: 1;
+          overflow-x: scroll;
+          max-height: 500px;
+
+          @include tabletPortrait {
+            width: 100%;
+            text-align: center;
+          }
+
+          .culture{
+              margin: 60px 0;
+
+              h4{
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: $color-blue;
+              }
+
+              p{
+                  color: $color-black-4;
+                  font-size: 18px;
+                  line-height: 30px;
+              }
+          }
+      }
+  }
+}
