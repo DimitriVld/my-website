@@ -1,0 +1,65 @@
+.p-contact {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    max-width: 800px;
+  }
+
+  &-logo {
+    position: absolute;
+    right: -100px;
+    top: -150px;
+    width: 747.54px;
+    height: 769.89px;
+    opacity: .5;
+    transform: rotate(15deg);
+    z-index: -1;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tabletPortrait {
+      flex-direction: column;
+    }
+
+    fieldset {
+      width: 45%;
+
+      @include tabletPortrait {
+        width: 100%;
+      }
+    }
+  }
+
+  &-input {
+    width: 100%;
+  }
+
+  fieldset {
+    margin-top: 20px;
+  }
+
+  &-textarea {
+    width: 100%;
+  }
+}
