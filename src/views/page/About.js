@@ -1,6 +1,7 @@
 import React from 'react';
 import WelcomeSection from '../section/Welcome';
 import CultureSection from '../section/Culture';
+import VisionSection from '../section/Vision';
 
 const About = () => { 
 
@@ -12,6 +13,7 @@ const About = () => {
       isAbout='true'
       />
       <CultureSection />
+      <VisionSection />
     </div>
   );
 };
