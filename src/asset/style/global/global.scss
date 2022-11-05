@@ -111,4 +111,22 @@
 
 body {
   font-family: Roboto;
+  
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page {
+  max-height: 100vh;
+	overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.panel {
+  scroll-snap-align: start;
+  height: 100vh;
 }

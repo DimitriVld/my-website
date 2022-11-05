@@ -3,7 +3,7 @@ import LogoIcon from '../icon/Logo';
 
 const WelcomeSection = (props) => {
   return (
-    <div className={`s-welcome height-100-vh home ${props.isServices ? 'services' : ''} ${props.isAbout ? 'about' : ''}`}>
+    <div className={`panel s-welcome height-100-vh home ${props.isServices ? 'services' : ''} ${props.isAbout ? 'about' : ''}`}>
       <div className="container">
         <LogoIcon class='s-welcome-logo' />
         <h1 className='s-welcome-title ui-h1'>{props.title}</h1>

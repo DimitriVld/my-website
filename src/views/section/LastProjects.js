@@ -7,7 +7,7 @@ const LastProjects = () => {
   const context = useContext(AppContext)
 
   return (
-    <div className={"s-lastProjects"}>
+    <div className={"panel s-lastProjects overflow-s"}>
       <div className={'container'}>
         <h3 className='s-lastProjects-title ui-h1 is-medium'><hr></hr>My last works</h3>
         <ul className='s-lastProjects-list'>

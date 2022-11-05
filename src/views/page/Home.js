@@ -6,7 +6,7 @@ import LastProjectsSection from '../section/LastProjects';
 const Home = () => { 
 
   return (
-    <div>
+    <div className='page'>
       <WelcomeSection
         title='Dimitri Vildina'
         subtitle='I create & build digital solution'
