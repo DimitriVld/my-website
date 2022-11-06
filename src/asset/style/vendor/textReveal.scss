@@ -1,0 +1,13 @@
+.js-textReveal-text {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: attr(data-text);
+    opacity: 0;
+  }
+
+  span {
+    position: absolute;
+  }
+}

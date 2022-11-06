@@ -1,7 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { gsap } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const LastProjects = () => {
   const context = useContext(AppContext)

@@ -13,7 +13,7 @@ const DefaultLayout = (props) => {
   useEffect(() => {
     ScrollTrigger.defaults({
       toggleActions: "restart pause resume pause",
-      scroller: ".container"
+      scroller: ".page"
     });
   }, []);
 
