@@ -16,31 +16,31 @@
 
   &-left {
     flex: 1;
+  }
+
+  &-title {
+    display: flex;
+    align-items: flex-end;
 
     span {
       left: 80px;
     }
 
-    h3 {
-      display: flex;
-      align-items: flex-end;
-
-        hr {
-          width: 67px;
-          border: 1px solid $color-black-4;
-          margin: auto 23px auto 0;
-        }
+    hr {
+      width: 67px;
+      border: 1px solid $color-black-4;
+      margin: auto 23px auto 0;
     }
+  }
 
-    p {
-      width: 70%;
-      margin-top: 20px;
-      font-size: 20px;
-      line-height: 50px;
+  &-text {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 50px;
 
-      @include tabletPortrait {
-        width: 100%;
-      }
+    @include tabletPortrait {
+      width: 100%;
     }
   }
 
@@ -50,14 +50,14 @@
     @include tabletPortrait {
       margin-top: 20px;
     }
+  }
 
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-      font-size: 20px;
-    }
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
   }
 
   &-arrow {

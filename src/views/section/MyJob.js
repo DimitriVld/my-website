@@ -13,10 +13,10 @@ const MyJob = () => {
     <div className={"s-myJob js-section-animate-on-scroll js-textReveal-trigger"}>
       <div className='container'>
         <div className="s-myJob-left">
-          <h3 className='ui-h1 is-medium js-textReveal-text' data-text='--My job'><hr></hr>
+          <h3 className='s-myJob-title ui-h1 is-medium js-textReveal-text' data-text='--My job'><hr></hr>
             <span>My job</span>
           </h3>
-          <p>
+          <p className='s-myJob-text'>
           My job is not to create pretty web concepts that are similar to
           you, our job is also to make sure your product is online is more
           efficient, secure and more scalable possible. Your product must
@@ -25,7 +25,7 @@ const MyJob = () => {
           </p>
         </div>
         <div className="s-myJob-right">
-          <Link to={'/contact'}>
+          <Link className='s-myJob-link' to={'/contact'}>
             Contact us
             <ChevronRightIcon class="s-myJob-arrow" />
           </Link>
