@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { textReveal } from '../../super/TextReveal';
 import ChevronRightIcon from '../icon/ChevronRight';
 
 const MyJob = () => {
+
+  useEffect(() => {
+    textReveal('.s-myJob.js-textReveal-trigger', '.s-myJob .js-textReveal-text span');
+  });
+
   return (
-    <div className={"s-myJob js-section-animate-on-scroll"}>
+    <div className={"s-myJob js-section-animate-on-scroll js-textReveal-trigger"}>
       <div className='container'>
         <div className="s-myJob-left">
-          <h3 className='ui-h1 is-medium'><hr></hr>My job</h3>
+          <h3 className='ui-h1 is-medium js-textReveal-text' data-text='--My job'><hr></hr>
+            <span>My job</span>
+          </h3>
           <p>
           My job is not to create pretty web concepts that are similar to
           you, our job is also to make sure your product is online is more

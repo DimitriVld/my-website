@@ -5,7 +5,7 @@ import LogoIcon from '../icon/Logo';
 const WelcomeSection = (props) => {
 
   useEffect(() => {
-    textReveal('.js-textReveal-trigger', '.js-textReveal-text span');
+    textReveal('.s-welcome.js-textReveal-trigger', '.s-welcome .js-textReveal-text span');
   });
 
   return (

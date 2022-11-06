@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    height: calc(100% - 80px);
 
     @include tabletPortrait {
       flex-direction: column;
@@ -14,6 +16,10 @@
 
   &-left {
     flex: 1;
+
+    span {
+      left: 80px;
+    }
 
     h3 {
       display: flex;
