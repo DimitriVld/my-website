@@ -6,7 +6,7 @@ import LastProjectsSection from '../section/LastProjects';
 const Home = () => { 
 
   return (
-    <div className='page'>
+    <div className='js-page-animate-on-scroll'>
       <WelcomeSection
         title='Dimitri Vildina'
         subtitle='I create & build digital solution'

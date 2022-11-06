@@ -4,7 +4,7 @@ import ChevronRightIcon from '../icon/ChevronRight';
 
 const MyJob = () => {
   return (
-    <div className={"panel s-myJob"}>
+    <div className={"s-myJob js-section-animate-on-scroll"}>
       <div className='container'>
         <div className="s-myJob-left">
           <h3 className='ui-h1 is-medium'><hr></hr>My job</h3>

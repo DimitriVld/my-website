@@ -120,13 +120,13 @@ html, body {
   overflow: hidden;
 }
 
-.page {
+.js-page-animate-on-scroll {
   max-height: 100vh;
 	overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
-.panel {
+.js-section-animate-on-scroll {
   scroll-snap-align: start;
   height: 100vh;
 }

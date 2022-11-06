@@ -9,7 +9,7 @@ const WelcomeSection = (props) => {
   });
 
   return (
-    <div className={`panel s-welcome height-100-vh home ${props.isServices ? 'services' : ''} ${props.isAbout ? 'about' : ''} js-textReveal-trigger`}>
+    <div className={`s-welcome height-100-vh home ${props.isServices ? 'services' : ''} ${props.isAbout ? 'about' : ''} js-textReveal-trigger js-section-animate-on-scroll`}>
       <div className="container">
         <LogoIcon class='s-welcome-logo' />
         <div className='s-welcome-title ui-h1 js-textReveal-text' data-text={props.title}>
