@@ -32,8 +32,6 @@
 
       .cultures{
           flex: 1;
-          overflow-x: scroll;
-          max-height: 500px;
 
           @include tabletPortrait {
             width: 100%;
