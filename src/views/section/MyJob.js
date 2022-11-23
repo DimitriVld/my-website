@@ -10,7 +10,7 @@ const MyJob = () => {
   });
 
   return (
-    <div className={"s-myJob js-section-animate-on-scroll js-textReveal-trigger"}>
+    <div className={"s-myJob js-textReveal-trigger"}>
       <div className='container'>
         <div className="s-myJob-left">
           <h3 className='s-myJob-title ui-h1 is-medium js-textReveal-text' data-text='My job'>

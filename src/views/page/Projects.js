@@ -12,7 +12,6 @@ const Projects = () => {
   const context = useContext(AppContext)
 
   useEffect(() => {
-    document.body.style.overflow = 'initial';
     projectReveal();
   });
 

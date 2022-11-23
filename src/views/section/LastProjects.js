@@ -53,7 +53,7 @@ const LastProjects = () => {
         </h3>
         <ul className='s-lastProjects-list'>
           {context && context.map((project, index) => (
-            <div key={index} className={`s-lastProjects-itemWrapper display-f-c js-section-animate-on-scroll ${index > 2 ? 'display-n' : ''}`}>
+            <div key={index} className={`s-lastProjects-itemWrapper display-f-c ${index > 2 ? 'display-n' : ''}`}>
               <li className={`s-lastProjects-item`}>
                 <div className="s-lastProjects-bg"></div>
                 <div className="s-lastProjects-infos">
