@@ -64,11 +64,12 @@
     .icons{
         flex: 1 75%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        padding: 78px;
+        padding: 78px 0 78px 40px;
 
         .icon{
-            margin: 10px;
+            margin: 30px;
         }
     }
 }
