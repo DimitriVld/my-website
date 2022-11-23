@@ -4,9 +4,6 @@ import ServicesSection from '../section/Services';
 import Skills from '../section/Skills';
 
 const Services = () => {
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-  }, []);
   return (
     <div>
       <WelcomeSection
