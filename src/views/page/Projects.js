@@ -16,24 +16,15 @@ const Projects = () => {
   });
 
   const projectReveal = () => {
-    const items = document.querySelectorAll('.p-projects-item');
+    gsap.defaults({ease: "power3"});
+    gsap.set(".p-projects-item", {y: 100});
 
-    items.forEach(element => {
-      const animateIn = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".p-projects",
-          start: "top center",
-          markers: "true",
-          toggleActions: "play",
-        }
-      });
-    
-      animateIn.from(element, {
-        y: 100,
-        opacity: 0, 
-        duration: 1
-      });
-    })
+    ScrollTrigger.batch(".p-projects-item", {
+      onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 2]}, overwrite: true}),
+      onLeave: batch => gsap.set(batch, {opacity: 0, y: -100, overwrite: true}),
+      onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+      onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 100, overwrite: true})
+    });
   }
 
   return (

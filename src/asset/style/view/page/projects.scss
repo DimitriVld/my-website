@@ -1,6 +1,5 @@
 .p-projects {
   padding: 90px 0 35px;
-  overflow: hidden;
 
   .container {
     position: relative;
@@ -37,6 +36,7 @@
   &-item {
     position: relative;
     height: fit-content;
+    opacity: 0;
 
     &::after {
       content: '';
