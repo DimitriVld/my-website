@@ -18,6 +18,9 @@ const WelcomeSection = (props) => {
         <p className='s-welcome-subtitle ui-h1 is-big js-textReveal-text' data-text={props.subtitle}>
           <span dangerouslySetInnerHTML={{__html: props.subtitle}}></span>
         </p>
+        <p className='s-welcome-subtitle ui-h1 is-big js-textReveal-text' data-text={props.subtitle2}>
+          <span dangerouslySetInnerHTML={{__html: props.subtitle2}}></span>
+        </p>
         <p className="s-welcome-scroll">Scroll</p>
       </div>
     </div>
