@@ -1,21 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { gsap } from "gsap/all";
 import Header from '../component/Header';
 import Menu from '../component/Menu';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const DefaultLayout = (props) => {
   const [tlMenu, setTlMenu] = useState(null)
   const [menuIsVisible, setMenuIsVisible] = useState(false);
-
-  useEffect(() => {
-    ScrollTrigger.defaults({
-      toggleActions: "restart pause resume pause",
-      scroller: ".js-page-animate-on-scroll"
-    });
-  }, []);
 
   const showMenu = () => {
     const menuElement = document.querySelector(".c-menu");
