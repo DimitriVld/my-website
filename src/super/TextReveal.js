@@ -7,7 +7,6 @@ export const textReveal = (trigger, item) => {
     scrollTrigger: {
       trigger: trigger,
       start: "top center",
-      markers: "true",
       toggleActions: "play none none reverse",
     }
   });

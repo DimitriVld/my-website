@@ -26,7 +26,6 @@ const LastProjects = () => {
         scrollTrigger: {
           trigger: element,
           start: "top center",
-          markers: "true",
           toggleActions: "play none none reverse",
         }
       });

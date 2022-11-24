@@ -6,7 +6,7 @@ const Vision = () => {
       <div className='container'>
         <div className="bg"></div>
         <div className='title'>
-          <h3 className='ui-h1'><hr></hr>Our techno</h3>
+          <h3 className='ui-h1'><hr></hr>My vision</h3>
           <img className="icon" src="./images/devices_other-2.svg" alt="icon" />
           <p>Design cross device</p>
         </div>

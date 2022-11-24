@@ -8,6 +8,15 @@
 	background-color: $color-blue;
 	color: $color-white;
 	text-align: center;
+
+	&.is-valid {
+		cursor: pointer;
+		background-color: $color-green;
+	}
+
+	&.is-error {
+		background-color: $color-red;
+	}
 }
 
 .ui-checkbox {
