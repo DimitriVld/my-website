@@ -35,7 +35,7 @@ const Project = () => {
           </div>
         </div>
 
-        <a className='p-project-link' href={project?.attributes.Link}>
+        <a className='p-project-link' href={project?.attributes.Link} target="_blank" rel="noreferrer">
           <span>Go to the website</span>
           <ArrowRightIcon />
         </a>
