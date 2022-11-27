@@ -16,14 +16,15 @@ import AboutPage from "./views/page/About";
 import ContactPage from "./views/page/Contact";
 
 const App = () => {
+  console.log(process.env)
   const [context, setContext] = useState(null);
 
   useEffect(() => {
     axios
-      .get('http://localhost:1337/api/projects?populate=*')
+      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*`)
       .then((response) => setContext(response.data.data))
-      .catch((error) => console.log("erreur"))
-      .finally(() => console.log('okokok'));
+      .catch(() => {return ;})
+      .finally(() => {return ;});
   }, []);
 
   return (
