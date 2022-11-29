@@ -14,10 +14,10 @@ const Header = (props) => {
         </Link>
 
         <div className='c-header-btnWrap'>
-          <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white'>
+          <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white js-cursor-ponter'>
             <EmailIcon />
           </a>
-          <a href='https://www.linkedin.com/in/dimitrivildina/' className='c-header-btn is-white'>
+          <a href='https://www.linkedin.com/in/dimitrivildina/' className='c-header-btn is-white js-cursor-ponter'>
             <LinkedinIcon />
           </a>
 

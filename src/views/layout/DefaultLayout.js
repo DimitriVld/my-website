@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { gsap } from "gsap/all";
 import Header from '../component/Header';
 import Menu from '../component/Menu';
+import Cursor from '../component/Cursor';
 
 const DefaultLayout = (props) => {
   const [tlMenu, setTlMenu] = useState(null)
@@ -27,6 +28,7 @@ const DefaultLayout = (props) => {
   }
   return (
     <div className={"default-layout"}>
+      <Cursor />
       <Header funcToggleMenu={toggleMenu} />
       <Menu funcToggleMenu={toggleMenu} />
       <main className={"main-content"}>{props.page}</main>
