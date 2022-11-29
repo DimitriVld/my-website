@@ -4,13 +4,19 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  padding-top: 70px;
 
   .container {
     position: relative;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tabletPortrait {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &.home {
@@ -57,23 +63,13 @@
 
   &-title {
     font-weight: 400;
-      width: 50%;
       color: $color-white;
       z-index: 1;
-
-      @include tabletPortrait {
-        width: 100%;
-      }
   }
 
   &-subtitle {
-      width: 50%;
       color: $color-white;
       z-index: 1;
-
-      @include tabletPortrait {
-        width: 100%;
-      }
   }
 
   .services &-subtitle {
