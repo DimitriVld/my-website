@@ -24,6 +24,21 @@
         }
       }
 
+      &-title {
+        display: flex;
+        align-items: flex-end;
+    
+        span {
+          left: 50px;
+        }
+    
+        hr {
+          width: 67px;
+          border: 1px solid $color-black-4;
+          margin: auto 23px auto 0;
+        }
+      }
+
     .description{
         flex: 1 25%;
         display: flex;

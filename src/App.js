@@ -16,7 +16,6 @@ import AboutPage from "./views/page/About";
 import ContactPage from "./views/page/Contact";
 
 const App = () => {
-  console.log(process.env)
   const [context, setContext] = useState(null);
 
   useEffect(() => {
