@@ -19,6 +19,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  &-translateBtnWrapper,
+  &-translateBtn {
+    color: $color-black-4;
+  }
   
   &-btn {
     display: flex;

@@ -17,9 +17,9 @@ const Header = (props) => {
         </Link>
 
         <div className='c-header-btnWrap'>
-          <div>
-            <button onClick={() => i18n.changeLanguage('fr')}>fr</button> /
-            <button onClick={() => i18n.changeLanguage('en')}>en</button>
+          <div className='c-header-translateBtnWrapper'>
+            <button className='c-header-translateBtn' onClick={() => i18n.changeLanguage('fr')}>FR</button> /
+            <button className='c-header-translateBtn' onClick={() => i18n.changeLanguage('en')}>EN</button>
           </div>
           <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white js-cursor-ponter'>
             <EmailIcon />
