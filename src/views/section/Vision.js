@@ -19,7 +19,6 @@ const Vision = () => {
       scrollTrigger: {
         trigger: '.s-vision',
         start: "top center",
-        markers: true,
         toggleActions: "play none none reverse",
       }
     });

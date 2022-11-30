@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import Lottie from "lottie-react";
+import { useTranslation } from "react-i18next";
 import lottieDev from "../../lotties/lottie-dev.json";
 import { textReveal } from '../../super/TextReveal';
 import LogoIcon from '../icon/Logo';
 
 const WelcomeSection = (props) => {
+  const {t, i18n} = useTranslation('common');
 
   useEffect(() => {
     textReveal('.s-welcome.js-textReveal-trigger', '.s-welcome .js-textReveal-text span');
@@ -15,6 +17,7 @@ const WelcomeSection = (props) => {
       <div className="container">
         <LogoIcon class='s-welcome-logo' />
         <div>
+         {t('welcome.title')}
           <div className='s-welcome-title ui-h1 js-textReveal-text' data-text={props.title}>
             <span>{props.title}</span>
           </div>

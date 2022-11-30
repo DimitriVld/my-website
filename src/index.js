@@ -3,11 +3,32 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {I18nextProvider} from "react-i18next";
+import i18next from "i18next";
+import common_fr from "./translation/fr/main.json";
+import common_en from "./translation/en/main.json";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+i18next.init({
+  interpolation: { escapeValue: false },
+  lng: 'fr',
+  resources: {
+      fr: {
+          common: common_fr
+      },
+      en: {
+          common: common_en
+      },
+  },
+});
+
 root.render(
   <React.StrictMode>
-    <App />
+   <I18nextProvider i18n={i18next}>
+      <App/>
+    </I18nextProvider>
   </React.StrictMode>
 );
 
