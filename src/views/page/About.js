@@ -15,8 +15,8 @@ const About = () => {
       subtitle={t('page.about.welcome.subtitle')}
       isAbout='true'
       />
-      <CultureSection />
       <VisionSection />
+      <CultureSection />
       <ContactSection />
     </div>
   );

@@ -8,7 +8,7 @@
   },
 
   "page.about": {
-    "welcome.subtitle": "know everything about us"
+    "welcome.subtitle": "know everything about me"
   },
 
   "page.contact": {
@@ -44,7 +44,7 @@
 
   "page.services": {
     "welcome.subtitle": "I am committed to defining for you, maintainable digital solutions, scalable, efficient and secure to better meet your needs.",
-    "welcome.subtitle2": "Thanks to the variety and versatility of our talented employees, we can intervene and follow from A to Z on all your projects. Let's do it!"
+    "welcome.subtitle2": "Thanks to the variety and versatility of my talented employees, we can intervene and follow from A to Z on all your projects. Let's do it !"
   },
 
   "section.contact": {
@@ -55,12 +55,12 @@
 
   "section.culture": {
     "title": "My culture,<br/> values and <br/>belief",
-    "performance.title": "#Performance",
-    "performance.text": "Add text",
-    "maintenance.title": "#Maintenance",
-    "maintenance.text": "Add text",
-    "security.title": "#Security",
-    "security.text": "Add text"
+    "performance.title": "#Organization",
+    "performance.text": "Organisation is a very important thing for a project to develop properly. That's why we propose a preprod that will allow you to follow the progress of the project and a ticketing system for a better understanding of each task",
+    "maintenance.title": "#Multifunction",
+    "maintenance.text": "Having a range of skills and associations will enable me to offer you project management from A to Z",
+    "security.title": "#Performance #Security #Maintenance",
+    "security.text": "These are the 3 most important concepts in the development of a project so I try to find a balance between the 3"
   },
 
   "section.lastProjects": {
@@ -71,7 +71,7 @@
 
   "section.myJob": {
     "title": "My job",
-    "text": "My job is not to create pretty web concepts that are similar to you, our job is also to make sure your product is online is more efficient, secure and more scalable possible. Your product must convert. Your product must differentiate you. That's where we come in.",
+    "text": "My job is not just to create pretty web concepts that are similar to you, our job is also to make sure your product is online is more efficient, secure and more scalable possible. Your product must convert. Your product must differentiate you. That's where i come in.",
     "link": "Contact me"
   },
 
@@ -99,12 +99,12 @@
 
   "section.skills": {
     "title": "My technos",
-    "text": "We gather a panel of techno to succeed at best all of our projects."
+    "text": "Here is a panel of techno to succeed at best all of your projects."
   },
 
   "section.vision": {
-    "title": "My technos",
-    "text": "Curious and passionate about new technologies and technical issues, we would make a large network of talented people to create and build high quality digital solutions to meet your needs. Do not hesitate to challenge us, we will love to accompany you!",
-    "info": "Design cross device"
+    "title": "Dimitri Vildina",
+    "text": "Just out of a master CTO tech lead, we decided with 2 associates to create a freelance association. We offer web services of all types (web applications, showcase sites, e-commerce sites, APIs). Curious and passionate about new technologies and technical issues, we would make a great network of talented people to create and build high quality digital solutions to meet your needs. Don't hesitate to challenge us, we will be delighted to accompany you !",
+    "info": "My CV"
   }
 }
