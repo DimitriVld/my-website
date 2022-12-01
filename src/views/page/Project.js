@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
 import ArrowRightIcon from '../icon/ArrowRight';
 
 const Project = () => {
+  const {t} = useTranslation('common');
   let { projectId } = useParams();
   const context = useContext(AppContext);
-  const project = context?.find(element => element.id == projectId);
+  const project = context?.find(element => element.id === projectId);
 
   return (
     <div className={'p-project'}>
@@ -21,7 +23,7 @@ const Project = () => {
           <div className='p-project-infos'>
             <p className='p-project-description'>{project?.attributes.Description}</p>
             <div className='p-project-technos'>
-              <p>Techno we used</p>
+              <p>{t('page.project.text')}</p>
               <ul>
                 {project?.attributes.Techno.map((element, index) => {
                     return <li key={index}>{element.Text}</li>
@@ -36,7 +38,7 @@ const Project = () => {
         </div>
 
         <a className='p-project-link' href={project?.attributes.Link} target="_blank" rel="noreferrer">
-          <span>Go to the website</span>
+          <span>{t('page.project.link')}</span>
           <ArrowRightIcon />
         </a>
       </div>

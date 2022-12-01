@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { gsap } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 import { titleReveal } from '../../super/TextReveal';
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
@@ -9,6 +10,7 @@ import Desktop from '../icon/Desktop';
 gsap.registerPlugin(ScrollTrigger);
 
 const LastProjects = () => {
+  const {t} = useTranslation('common');
   const context = useContext(AppContext);
 
   useEffect(() => {
@@ -75,9 +77,9 @@ const LastProjects = () => {
   return (
     <div className={"s-lastProjects js-s-lastProjects"}>
       <div className={'container'}>
-        <h3 className='s-lastProjects-title ui-h1 is-medium js-textReveal-text' data-text='My last works'>
+        <h3 className='s-lastProjects-title ui-h1 is-medium js-textReveal-text' data-text={t('section.lastProjects.title')}>
           <hr></hr>
-          <span>My last works</span>
+          <span>{t('section.lastProjects.title')}</span>
         </h3>
         <ul className='s-lastProjects-list'>
           {context && context.map((project, index) => (
@@ -96,14 +98,14 @@ const LastProjects = () => {
 
                 <div className="s-lastProjects-description">
                   <p className='js-s-lastProjects-text'>{project.attributes.Intro}</p>
-                  <Link className='ui-button js-s-lastProjects-text' to={`/project/${project.id}`}>Discover</Link>
+                  <Link className='ui-button js-s-lastProjects-text' to={`/project/${project.id}`}>{t('section.lastProjects.discover')}</Link>
                 </div>
               </li>
             </div>
           ))}
         </ul>
 
-        <Link className='s-lastProjects-btn ui-button' to={'/projects'}>View all projects</Link>
+        <Link className='s-lastProjects-btn ui-button' to={'/projects'}>{t('section.lastProjects.button')}</Link>
       </div>
     </div>
   );

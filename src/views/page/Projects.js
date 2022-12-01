@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useTranslation } from "react-i18next";
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
 import LogoIcon from '../icon/Logo';
@@ -9,6 +10,7 @@ import LogoIcon from '../icon/Logo';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => { 
+  const {t} = useTranslation('common');
   const context = useContext(AppContext)
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const Projects = () => {
     <div className='p-projects'>
       <div className='container'>
         <LogoIcon class='p-projects-logo' />
-        <h1 className='ui-h1'>My projects</h1>
+        <h1 className='ui-h1'>{t('page.projects.title')}</h1>
         <ul className='p-projects-list'>
           {context && context.map((project) => (
             <li className="p-projects-item cursor-p" key={project.id}>

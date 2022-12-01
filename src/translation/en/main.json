@@ -1,5 +1,110 @@
 {
-  "welcome": {
-      "title": "Welcome"
+  "menu": {
+    "homepage": "Homepage",
+    "projects": "My projects",
+    "services": "My Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+
+  "page.about": {
+    "welcome.subtitle": "know everything about us"
+  },
+
+  "page.contact": {
+    "title": "Send me a message !",
+    "text": "Got a question or proposal, or just want <br/> to say hello ? Go ahead.",
+    "name.label": "Name",
+    "name.placeholder": "Name",
+    "subject.label": "Subject",
+    "subject.placeholder": "Subject",
+    "email.label": "Email",
+    "email.placeholder": "Dimitri@gmail.com",
+    "phone.label": "Phone",
+    "phone.placeholder": "0678787878",
+    "message.label": "Your message",
+    "message.placeholder": "Your message",
+    "button": "Send",
+    "message.valid": "it's ok",
+    "message.error": "it's not ok"
+  },
+
+  "page.home": {
+    "welcome.subtitle": "I create & build digital solution"
+  },
+
+  "page.project": {
+    "text": "Techno we used",
+    "link": "Go to the website"
+  },
+
+  "page.projects": {
+    "title": "My projects"
+  },
+
+  "page.services": {
+    "welcome.subtitle": "I am committed to defining for you, maintainable digital solutions, scalable, efficient and secure to better meet your needs.",
+    "welcome.subtitle2": "Thanks to the variety and versatility of our talented employees, we can intervene and follow from A to Z on all your projects. Let's do it!"
+  },
+
+  "section.contact": {
+    "title": "Work with me",
+    "text": "Let’s work together to build something great.",
+    "link": "Contact me"
+  },
+
+  "section.culture": {
+    "title": "My culture,<br/> values and <br/>belief",
+    "performance.title": "#Performance",
+    "performance.text": "Add text",
+    "maintenance.title": "#Maintenance",
+    "maintenance.text": "Add text",
+    "security.title": "#Security",
+    "security.text": "Add text"
+  },
+
+  "section.lastProjects": {
+    "title": "My last works",
+    "discover": "Discover",
+    "button": "View all projects"
+  },
+
+  "section.myJob": {
+    "title": "My job",
+    "text": "My job is not to create pretty web concepts that are similar to you, our job is also to make sure your product is online is more efficient, secure and more scalable possible. Your product must convert. Your product must differentiate you. That's where we come in.",
+    "link": "Contact me"
+  },
+
+  "section.services": {
+    "service-1": {
+      "item-1": "Wireframing & Prototyping",
+      "item-2": "UX design",
+      "item-3": "UI design",
+      "item-4": "Responsive design",
+      "item-5": "Usability & accessibility"
+    },
+    "service-2": {
+      "item-1": "Front-End Development",
+      "item-2": "Back-End Development",
+      "item-3": "Responsive Development",
+      "item-4": "Mobile Development"
+    },
+    "service-3": {
+      "item-1": "Performence optimization",
+      "item-2": "Site security",
+      "item-3": "Site Back-up",
+      "item-4": "Accessibility testing"
+    }
+  },
+
+  "section.skills": {
+    "title": "My technos",
+    "text": "We gather a panel of techno to succeed at best all of our projects."
+  },
+
+  "section.vision": {
+    "title": "My technos",
+    "text": "Curious and passionate about new technologies and technical issues, we would make a large network of talented people to create and build high quality digital solutions to meet your needs. Do not hesitate to challenge us, we will love to accompany you!",
+    "info": "Design cross device"
   }
 }

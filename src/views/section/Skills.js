@@ -1,8 +1,10 @@
 import React, {useEffect, useState}  from 'react';
 import axios from 'axios';
+import { useTranslation } from "react-i18next";
 import { textReveal, titleReveal } from '../../super/TextReveal';
 
 const Skills = () => {
+  const {t} = useTranslation('common');
   const [technos, setTechnos] = useState(null);
 
   useEffect(() => {
@@ -22,11 +24,11 @@ const Skills = () => {
       <div className='container'>
         <div className="bg"></div>
         <div className='description'>
-          <h3 className='s-skills-title ui-h1 is-medium js-textReveal-text' data-text='My technos'>
+          <h3 className='s-skills-title ui-h1 is-medium js-textReveal-text' data-text={t('section.skills.title')}>
             <hr></hr>
-            <span>My technos</span>
+            <span>{t('section.skills.title')}</span>
           </h3>
-          <p>We gather a panel of techno to succeed at best all of our projects</p>
+          <p className='js-s-skills-text'>{t('section.skills.text')}</p>
         </div>
 
         <ul className='icons js-s-skills-text'>

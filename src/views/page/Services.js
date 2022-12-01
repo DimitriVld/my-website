@@ -1,15 +1,18 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+import { useTranslation } from "react-i18next";
 import WelcomeSection from '../section/Welcome';
 import ServicesSection from '../section/Services';
 import Skills from '../section/Skills';
 
 const Services = () => {
+  const {t} = useTranslation('common');
+
   return (
     <div>
       <WelcomeSection
         title='Dimitri Vildina'
-        subtitle="I am committed to defining for you, maintainable digital solutions, scalable, efficient and secure to better meet your needs."
-        subtitle2="Thanks to the variety and versatility of our talented employees, we can intervene and follow from A to Z on all your projects.Let's do it!"
+        subtitle={t('page.services.welcome.subtitle')}
+        subtitle2={t('page.services.welcome.subtitle2')}
         isServices='true'
       />
       <ServicesSection />

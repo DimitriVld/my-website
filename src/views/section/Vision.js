@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from "react-i18next";
 import { gsap } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { textReveal } from '../../super/TextReveal';
@@ -6,6 +7,7 @@ import { textReveal } from '../../super/TextReveal';
 gsap.registerPlugin(ScrollTrigger);
 
 const Vision = () => {
+  const {t} = useTranslation('common');
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
 
@@ -68,15 +70,15 @@ const Vision = () => {
       <div className='container'>
         <div ref={bgRef} className="bg js-s-vision-bg"></div>
         <div className='title'>
-          <h3 className='ui-h1 is-medium js-textReveal-text' data-text='My vision'>
-            <span>My vision</span>
+          <h3 className='ui-h1 is-medium js-textReveal-text' data-text={t('section.vision.title')}>
+            <span>{t('section.vision.title')}</span>
           </h3>
           <img className="icon" src="./images/devices_other-2.svg" alt="icon" />
-          <p className='js-s-vision-btn'>Design cross device</p>
+          <p className='js-s-vision-btn'>{t('section.vision.info')}</p>
         </div>
 
         <div className='description js-s-vision-description'>
-          <p>Curious and passionate about new technologies and technical issues, we would make a large network of talented people to create and build high quality digital solutions to meet your needs. Do not hesitate to challenge us, we will love to accompany you!</p>
+          <p>{t('section.vision.text')}</p>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'fr',
+  lng: 'en',
   resources: {
       fr: {
           common: common_fr
