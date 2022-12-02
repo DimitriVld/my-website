@@ -17,7 +17,7 @@ const Vision = () => {
   });
 
   const sectionReveal = () => {
-    const animateIn = gsap.timeline({
+    const animateInBg = gsap.timeline({
       scrollTrigger: {
         trigger: '.s-vision',
         start: "top center",
@@ -25,7 +25,7 @@ const Vision = () => {
       }
     });
 
-    animateIn.fromTo(
+    animateInBg.fromTo(
       '.js-s-vision-bg',
       {
         autoAlpha: 0,
@@ -39,7 +39,15 @@ const Vision = () => {
       }
     );
 
-    animateIn.fromTo(
+    const animateInDesc = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.s-vision',
+        start: "top center",
+        toggleActions: "play none none reverse",
+      }
+    });
+
+    animateInDesc.fromTo(
       '.js-s-vision-description',
       { x: 100, autoAlpha: 0 },
       {
@@ -50,7 +58,15 @@ const Vision = () => {
       }
     );
 
-    animateIn.fromTo(
+    const animateInBtn = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.s-vision',
+        start: "top center",
+        toggleActions: "play none none reverse",
+      }
+    });
+
+    animateInBtn.fromTo(
       '.js-s-vision-btn',
       {
         autoAlpha: 0,
@@ -74,7 +90,7 @@ const Vision = () => {
             <span>{t('section.vision.title')}</span>
           </h3>
           <img className="icon" src="./images/devices_other-2.svg" alt="icon" />
-          <p className='js-s-vision-btn'>{t('section.vision.info')}</p>
+          <a href='/' className='js-s-vision-btn'>{t('section.vision.info')}</a>
         </div>
 
         <div className='description js-s-vision-description'>
