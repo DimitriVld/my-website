@@ -18,17 +18,18 @@ const Header = (props) => {
 
         <div className='c-header-btnWrap'>
           <div className='c-header-translateBtnWrapper'>
-            <button className='c-header-translateBtn' onClick={() => i18n.changeLanguage('fr')}>FR</button> /
-            <button className='c-header-translateBtn' onClick={() => i18n.changeLanguage('en')}>EN</button>
+            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => i18n.changeLanguage('fr')}>FR</button>
+            <span>/</span>
+            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => i18n.changeLanguage('en')}>EN</button>
           </div>
-          <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white js-cursor-ponter'>
+          <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white js-cursor-pointer'>
             <EmailIcon />
           </a>
-          <a href='https://www.linkedin.com/in/dimitrivildina/' className='c-header-btn is-white js-cursor-ponter'>
+          <a href='https://www.linkedin.com/in/dimitrivildina/' className='c-header-btn is-white js-cursor-pointer'>
             <LinkedinIcon />
           </a>
 
-          <div className="c-header-btn cursor-p" onClick={() => props.funcToggleMenu()}>
+          <div className="c-header-btn cursor-p js-cursor-pointer" onClick={() => props.funcToggleMenu()}>
             <BurgerIcon class='c-header-burgerIcon'/>
           </div>
         </div>

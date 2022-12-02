@@ -27,7 +27,7 @@ const MyJob = () => {
           <p className='s-myJob-text js-s-myJob-text'>{t('section.myJob.text')}</p>
         </div>
         <div className="s-myJob-right js-s-myJob-text">
-          <Link className='s-myJob-link' to={'/contact'}>
+          <Link className='s-myJob-link js-cursor-pointer' to={'/contact'}>
             {t('section.myJob.link')}
             <ChevronRightIcon class="s-myJob-arrow" />
           </Link>

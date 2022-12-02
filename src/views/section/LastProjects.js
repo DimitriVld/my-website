@@ -87,10 +87,10 @@ const LastProjects = () => {
               <li className={`s-lastProjects-item`}>
                 <div className="s-lastProjects-bg"></div>
                 <div className="s-lastProjects-infos">
-                  <Link to={`/project/${project.id}`} className="s-lastProjects-itemTitle ui-h1 js-s-lastProjects-text">
+                  <Link to={`/project/${project.id}`} className="s-lastProjects-itemTitle ui-h1 js-s-lastProjects-text js-cursor-pointer">
                       <h4><hr></hr>{project.attributes.Title}</h4>
                   </Link>
-                  <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper position-r overflow-h">
+                  <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper position-r overflow-h js-cursor-pointer">
                     <div className='s-lastProjects-imgOverlay'></div>
                     <Desktop img={project.attributes.Preview.data.attributes.url}/>
                   </Link>
@@ -98,14 +98,14 @@ const LastProjects = () => {
 
                 <div className="s-lastProjects-description">
                   <p className='js-s-lastProjects-text'>{project.attributes.Intro}</p>
-                  <Link className='ui-button js-s-lastProjects-text' to={`/project/${project.id}`}>{t('section.lastProjects.discover')}</Link>
+                  <Link className='ui-button js-s-lastProjects-text js-cursor-pointer' to={`/project/${project.id}`}>{t('section.lastProjects.discover')}</Link>
                 </div>
               </li>
             </div>
           ))}
         </ul>
 
-        <Link className='s-lastProjects-btn ui-button' to={'/projects'}>{t('section.lastProjects.button')}</Link>
+        <Link className='s-lastProjects-btn ui-button js-cursor-pointer' to={'/projects'}>{t('section.lastProjects.button')}</Link>
       </div>
     </div>
   );

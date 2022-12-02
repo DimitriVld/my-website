@@ -54,7 +54,7 @@ const Contact = () => {
             <textarea className='p-contact-textarea' name='message' placeholder={t('page.contact.message.placeholder')}></textarea>
           </fieldset>
 
-          <button className='p-contact-btn ui-button js-p-contact-btn' type='submit'>{t('page.contact.button')}</button>
+          <button className='p-contact-btn ui-button js-p-contact-btn js-cursor-pointer' type='submit'>{t('page.contact.button')}</button>
         </form>
       </div>
     </div>

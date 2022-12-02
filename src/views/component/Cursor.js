@@ -24,7 +24,7 @@ const Cursor = () => {
       requestAnimationFrame(loop);
     });
 
-    document.querySelectorAll(".js-cursor-ponter").forEach((item) => {
+    document.querySelectorAll(".js-cursor-pointer").forEach((item) => {
       item.addEventListener("mouseover", () => {
         cursorBorder.style.backgroundColor = "rgba(255, 255, 255, .4)";
         cursorBorder.style.setProperty("--size", "30px");

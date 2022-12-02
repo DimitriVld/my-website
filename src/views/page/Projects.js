@@ -37,7 +37,7 @@ const Projects = () => {
         <ul className='p-projects-list'>
           {context && context.map((project) => (
             <li className="p-projects-item cursor-p" key={project.id}>
-              <Link to={`/project/${project.id}`} className="p-projects-imgWrapper">
+              <Link to={`/project/${project.id}`} className="p-projects-imgWrapper js-cursor-pointer">
                 <Desktop img={project.attributes.Preview.data.attributes.url}/>
                 <div className='p-projects-itemInfos'>
                   <p className='p-projects-itemTitle'>{project.attributes.Title}</p>

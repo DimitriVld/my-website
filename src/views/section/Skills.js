@@ -14,8 +14,8 @@ const Skills = () => {
     axios
       .get('http://localhost:1337/api/technos?populate=*')
       .then((response) => setTechnos(response.data.data))
-      .catch((error) => console.log("erreur"))
-      .finally(() => console.log('okokok'));
+      .catch((error) => {return ;})
+      .finally(() => {return ;});
   }, []);
   
 

@@ -16,7 +16,7 @@ const Contact = () => {
       <div className='container'>
         <h3 className='ui-h1 js-s-contact-text'>{t('section.contact.title')}</h3>
         <h4 className='ui-h1 is-medium js-s-contact-text'>{t('section.contact.text')}</h4>
-        <Link className='s-contact-link' to={'/contact'}>
+        <Link className='s-contact-link js-cursor-pointer' to={'/contact'}>
           <span>{t('section.contact.link')}</span>
           <ChevronRightIcon />
         </Link>

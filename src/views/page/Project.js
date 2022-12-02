@@ -37,7 +37,7 @@ const Project = () => {
           </div>
         </div>
 
-        <a className='p-project-link' href={project?.attributes.Link} target="_blank" rel="noreferrer">
+        <a className='p-project-link js-cursor-pointer' href={project?.attributes.Link} target="_blank" rel="noreferrer">
           <span>{t('page.project.link')}</span>
           <ArrowRightIcon />
         </a>
