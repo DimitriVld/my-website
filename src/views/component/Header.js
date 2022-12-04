@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import AppContext from '../../context/AppContext';
 import LogoIcon from '../icon/Logo';
 import BurgerIcon from '../icon/Burger';
 import LinkedinIcon from '../icon/Linkedin';
@@ -18,9 +19,9 @@ const Header = (props) => {
 
         <div className='c-header-btnWrap'>
           <div className='c-header-translateBtnWrapper'>
-            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => i18n.changeLanguage('fr')}>FR</button>
+            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => {i18n.changeLanguage('fr')}}>FR</button>
             <span>/</span>
-            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => i18n.changeLanguage('en')}>EN</button>
+            <button className='c-header-translateBtn js-cursor-pointer' onClick={() => {i18n.changeLanguage('en')}}>EN</button>
           </div>
           <a href="mailto:contact@dimitri-dev.com" className='c-header-btn is-white js-cursor-pointer'>
             <EmailIcon />

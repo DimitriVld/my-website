@@ -1,18 +1,33 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import axios from 'axios';
 import AppContext from '../../context/AppContext';
 import Desktop from '../icon/Desktop';
 import ArrowRightIcon from '../icon/ArrowRight';
 
 const Project = () => {
+  const [project, setProject] = useState(null);
   const {t} = useTranslation('common');
   let { projectId } = useParams();
   const context = useContext(AppContext);
-  const project = context?.find(element => element.id === projectId);
+  
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*&locale=${t('lang')}`)
+      .then((response) => {
+        response.data.data.forEach(element => {
+          if (element.attributes.projectId == projectId) setProject(element);
+          console.log(element)
+        });
+      })
+      .catch(() => {return ;})
+      .finally(() => {return ;});
+  }, [context]);
 
   return (
     <div className={'p-project'}>
+      {project &&
       <div className='container'>
         <div className='p-project-header'>
           <p className='p-project-type'>{project?.attributes.Type}</p>
@@ -42,6 +57,7 @@ const Project = () => {
           <ArrowRightIcon />
         </a>
       </div>
+      }
     </div>
   );
 };

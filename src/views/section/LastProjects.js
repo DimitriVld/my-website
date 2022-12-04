@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { gsap } from "gsap/all";
+import axios from 'axios';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
 import { titleReveal } from '../../super/TextReveal';
@@ -10,8 +11,17 @@ import Desktop from '../icon/Desktop';
 gsap.registerPlugin(ScrollTrigger);
 
 const LastProjects = () => {
+  const [lastProjects, setLastProjects] = useState(null);
   const {t} = useTranslation('common');
   const context = useContext(AppContext);
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*&locale=${t('lang')}`)
+      .then((response) => setLastProjects(response.data.data))
+      .catch(() => {return ;})
+      .finally(() => {return ;});
+  }, [context]);
 
   useEffect(() => {
     titleReveal('.js-s-lastProjects', '.s-lastProjects .js-textReveal-text span');
@@ -82,12 +92,12 @@ const LastProjects = () => {
           <span>{t('section.lastProjects.title')}</span>
         </h3>
         <ul className='s-lastProjects-list'>
-          {context && context.map((project, index) => (
+          {lastProjects && lastProjects.map((project, index) => (
             <div key={index} className={`s-lastProjects-itemWrapper display-f-c ${index > 2 ? 'display-n' : ''}`}>
               <li className={`s-lastProjects-item`}>
                 <div className="s-lastProjects-bg"></div>
                 <div className="s-lastProjects-infos">
-                  <Link to={`/project/${project.id}`} className="s-lastProjects-itemTitle ui-h1 js-s-lastProjects-text js-cursor-pointer">
+                  <Link to={`/project/${project.attributes.projectId}`} className="s-lastProjects-itemTitle ui-h1 js-s-lastProjects-text js-cursor-pointer">
                       <h4><hr></hr>{project.attributes.Title}</h4>
                   </Link>
                   <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper position-r overflow-h js-cursor-pointer">

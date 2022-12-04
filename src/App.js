@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import AppContext from './context/AppContext';
 import {
   BrowserRouter,
@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import axios from 'axios';
+import { useTranslation } from "react-i18next";
 import './asset/style/style.scss'
 import DefaultLayout from './views/layout/DefaultLayout';
 import HomePage from "./views/page/Home";
@@ -17,10 +18,11 @@ import ContactPage from "./views/page/Contact";
 
 const App = () => {
   const [context, setContext] = useState(null);
+  const {t} = useTranslation('common');
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*`)
+      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*&locale=${t('lang')}`)
       .then((response) => setContext(response.data.data))
       .catch(() => {return ;})
       .finally(() => {return ;});

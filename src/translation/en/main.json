@@ -1,4 +1,5 @@
 {
+  "lang": "en",
   "menu": {
     "homepage": "Homepage",
     "projects": "My projects",
@@ -56,7 +57,7 @@
   "section.culture": {
     "title": "My culture,<br/> values and <br/>belief",
     "performance.title": "#Organization",
-    "performance.text": "Organisation is a very important thing for a project to develop properly. That's why we propose a preprod that will allow you to follow the progress of the project and a ticketing system for a better understanding of each task",
+    "performance.text": "Organization is a very important thing for a project to develop properly. That's why we propose a preprod that will allow you to follow the progress of the project and a ticketing system for a better understanding of each task",
     "maintenance.title": "#Multifunction",
     "maintenance.text": "Having a range of skills and associations will enable me to offer you project management from A to Z",
     "security.title": "#Performance #Security #Maintenance",

@@ -1,5 +1,111 @@
 {
-  "welcome": {
-      "title": "Bienvenue"
+  "lang": "fr-FR",
+  "menu": {
+    "homepage": "Accueil",
+    "projects": "Mes projets",
+    "services": "Mes services",
+    "about": "A propos",
+    "contact": "Contact"
+  },
+
+  "page.about": {
+    "welcome.subtitle": "Tout savoir sur moi"
+  },
+
+  "page.contact": {
+    "title": "Envoie-moi un message !",
+    "text": "Vous avez une question ou une proposition, ou vous voulez juste <br/>dire bonjour ? Allez-y.",
+    "name.label": "Nom",
+    "name.placeholder": "Nom",
+    "subject.label": "Sujet",
+    "subject.placeholder": "Sujet",
+    "email.label": "Email",
+    "email.placeholder": "email@gmail.com",
+    "phone.label": "Numéro de téléphone",
+    "phone.placeholder": "0678787878",
+    "message.label": "Ton message",
+    "message.placeholder": "Message",
+    "button": "Envoyer",
+    "message.valid": "C'est ok",
+    "message.error": "Il y a un problème"
+  },
+
+  "page.home": {
+    "welcome.subtitle": "Je crée et élabore vos solutions digitales"
+  },
+
+  "page.project": {
+    "text": "Technos utilisées",
+    "link": "Visiter le site"
+  },
+
+  "page.projects": {
+    "title": "Mes projets"
+  },
+
+  "page.services": {
+    "welcome.subtitle": "Je m'engage à définir pour vous des solutions digitales maintenables, évolutives, efficaces et sécurisées pour mieux répondre à vos besoins.",
+    "welcome.subtitle2": "Grâce à la variété et à la polyvalence de mes collaborateurs talentueux, nous pouvons intervenir et suivre de A à Z tous vos projets. C'est parti !"
+  },
+
+  "section.contact": {
+    "title": "Travaille avec moi",
+    "text": "Travaillons ensemble pour construire quelque chose de grand.",
+    "link": "Contactez-moi"
+  },
+
+  "section.culture": {
+    "title": "Ma culture,<br/> mes valeurs et <br/>mes croyances",
+    "performance.title": "#Organisation",
+    "performance.text": "L'organisation est une chose très importante pour qu'un projet se développe correctement. C'est pourquoi nous proposons un préprod qui vous permettra de suivre l'avancement du projet et un système de ticketing pour une meilleure compréhension de chaque tâche.",
+    "maintenance.title": "#Multifunction",
+    "maintenance.text": "Le fait de disposer d'un éventail de compétences et d'associations me permettra de vous proposer une gestion de projet de A à Z",
+    "security.title": "#Performance #Sécurité #Maintenance",
+    "security.text": "Ce sont les 3 concepts les plus importants dans le développement d'un projet. J'essaie donc de trouver un équilibre entre les 3."
+  },
+
+  "section.lastProjects": {
+    "title": "Derniers projets",
+    "discover": "Découvrir",
+    "button": "Voir tous les projets"
+  },
+
+  "section.myJob": {
+    "title": "Mon travail",
+    "text": "Mon travail n'est pas seulement de créer de jolis concepts web qui vous ressemblent, notre travail est aussi de nous assurer que votre produit est en ligne est plus efficace, sécurisé et plus évolutif possible. Votre produit doit convertir. Votre produit doit vous différencier. C'est là que j'interviens.",
+    "link": "Contactez-moi"
+  },
+
+  "section.services": {
+    "service-1": {
+      "item-1": "Wireframing & Prototyping",
+      "item-2": "Design UX",
+      "item-3": "Conception de l'interface utilisateur",
+      "item-4": "Responsive design",
+      "item-5": "Utilisabilité et accessibilité"
+    },
+    "service-2": {
+      "item-1": "Développement Front-End",
+      "item-2": "Développement Back-End",
+      "item-3": "Développement du responsive",
+      "item-4": "Développement mobile"
+    },
+    "service-3": {
+      "item-1": "Optimisation des performances",
+      "item-2": "Sécurité du site",
+      "item-3": "Sauvegarde du site",
+      "item-4": "Test d'accessibilité"
+    }
+  },
+
+  "section.skills": {
+    "title": "Mes technos",
+    "text": "Voici mon panel de technos pour réussir au mieux tous vos projets."
+  },
+
+  "section.vision": {
+    "title": "Dimitri Vildina",
+    "text": "Tout juste sortis d'un master CTO tech lead, nous avons décidé avec 2 associés de créer une association de freelance. Nous proposons des services web de tous types (applications web, sites vitrines, sites e-commerce, APIs). Curieux et passionnés par les nouvelles technologies et les problématiques techniques, nous ferions un excellent réseau de personnes talentueuses pour créer et construire des solutions numériques de qualité répondant à vos besoins. N'hésitez pas à nous challenger, nous serons ravis de vous accompagner !",
+    "info": "Mon CV"
   }
 }

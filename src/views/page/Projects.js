@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
@@ -10,8 +11,17 @@ import LogoIcon from '../icon/Logo';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => { 
+  const [projects, setProjects] = useState(null);
   const {t} = useTranslation('common');
   const context = useContext(AppContext)
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/projects?populate=*&locale=${t('lang')}`)
+      .then((response) => setProjects(response.data.data))
+      .catch(() => {return ;})
+      .finally(() => {return ;});
+  }, [context]);
 
   useEffect(() => {
     projectReveal();
@@ -35,9 +45,9 @@ const Projects = () => {
         <LogoIcon class='p-projects-logo' />
         <h1 className='ui-h1'>{t('page.projects.title')}</h1>
         <ul className='p-projects-list'>
-          {context && context.map((project) => (
+          {projects && projects.map((project) => (
             <li className="p-projects-item cursor-p" key={project.id}>
-              <Link to={`/project/${project.id}`} className="p-projects-imgWrapper js-cursor-pointer">
+              <Link to={`/project/${project.attributes.projectId}`} className="p-projects-imgWrapper js-cursor-pointer">
                 <Desktop img={project.attributes.Preview.data.attributes.url}/>
                 <div className='p-projects-itemInfos'>
                   <p className='p-projects-itemTitle'>{project.attributes.Title}</p>
