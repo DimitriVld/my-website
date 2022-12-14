@@ -18,12 +18,12 @@ const Project = () => {
       .then((response) => {
         response.data.data.forEach(element => {
           if (element.attributes.projectId == projectId) setProject(element);
-          console.log(element)
+          console.log('Element is' + element)
         });
       })
       .catch(() => {return ;})
       .finally(() => {return ;});
-  }, [context]);
+  }, [context, projectId, t]);
 
   return (
     <div className={'p-project'}>

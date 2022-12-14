@@ -21,7 +21,7 @@ const LastProjects = () => {
       .then((response) => setLastProjects(response.data.data))
       .catch(() => {return ;})
       .finally(() => {return ;});
-  }, [context]);
+  }, [context, t]);
 
   useEffect(() => {
     titleReveal('.js-s-lastProjects', '.s-lastProjects .js-textReveal-text span');

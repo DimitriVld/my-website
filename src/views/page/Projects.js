@@ -21,7 +21,7 @@ const Projects = () => {
       .then((response) => setProjects(response.data.data))
       .catch(() => {return ;})
       .finally(() => {return ;});
-  }, [context]);
+  }, [context, t]);
 
   useEffect(() => {
     projectReveal();
