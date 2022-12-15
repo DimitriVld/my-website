@@ -89,7 +89,7 @@ const Vision = () => {
           <h3 className='ui-h1 is-medium js-textReveal-text' data-text={t('section.vision.title')}>
             <span>{t('section.vision.title')}</span>
           </h3>
-          <img className="icon" src="./images/devices_other-2.svg" alt="icon" />
+          <img className="icon" src="./images/img-dv.jpg" alt="icon" />
           <a href='/' className='js-s-vision-btn'>{t('section.vision.info')}</a>
         </div>
 
