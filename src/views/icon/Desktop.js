@@ -14,7 +14,7 @@ const Desktop = (props) => {
         <circle cx="43" cy="16" r="6" stroke="#424242" strokeOpacity="0.5" strokeWidth="2"/>
       </svg>
 
-      <img src={`https://quiet-caverns-50172.herokuapp.com${props.img}`} alt="image" />
+      <img src={`${props.img}`} alt="image" />
     </span>
   );
 }

@@ -1,6 +1,10 @@
 .c-cursor {
   height: 100%;
   width: 100%;
+
+  @include tabletPortrait {
+    display: none;
+  }
   
   &-cursor {
     position: fixed;
