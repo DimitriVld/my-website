@@ -12,7 +12,7 @@ const Skills = () => {
     textReveal('.js-s-skills', '.js-s-skills-text');
 
     axios
-      .get('http://localhost:1337/api/technos?populate=*')
+      .get(`${process.env.REACT_APP_API_URL}/technos?populate=*`)
       .then((response) => setTechnos(response.data.data))
       .catch((error) => {return ;})
       .finally(() => {return ;});
@@ -34,7 +34,7 @@ const Skills = () => {
         <ul className='icons js-s-skills-text'>
           {technos && technos.map((techno, index) => (
             <li key={index} className='icon'>
-              <img src={`http://localhost:1337${techno.attributes.Logo.data.attributes.url}`} alt="image" />
+              <img src={techno.attributes.Logo.data.attributes.url} alt="image" />
             </li>
           ))}
         </ul>

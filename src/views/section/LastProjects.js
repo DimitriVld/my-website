@@ -98,12 +98,12 @@ const LastProjects = () => {
                 <div className="s-lastProjects-bg"></div>
                 <div className="s-lastProjects-infos">
                   <Link to={`/project/${project.attributes.projectId}`} className="s-lastProjects-itemTitle ui-h1 js-s-lastProjects-text js-cursor-pointer">
-                      <h4><hr></hr>{project.attributes.Title}</h4>
+                      <h4 className='js-cursor-pointer'><hr></hr>{project.attributes.Title}</h4>
                   </Link>
-                  <Link to={project.attributes.Link} className="s-lastProjects-imgWrapper position-r overflow-h js-cursor-pointer">
+                  <a href={project.attributes.Link} className="s-lastProjects-imgWrapper position-r overflow-h js-cursor-pointer">
                     <div className='s-lastProjects-imgOverlay'></div>
                     <Desktop img={project.attributes.Preview.data.attributes.url}/>
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="s-lastProjects-description">

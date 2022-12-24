@@ -13,7 +13,7 @@ const Header = (props) => {
   return (
     <div className={"c-header"}>
       <div className='container is-large'>
-        <Link to={'/'}>
+        <Link to={'/'} className="js-cursor-pointer">
           <LogoIcon class='s-header-logo' />
         </Link>
 

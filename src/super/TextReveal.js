@@ -28,8 +28,9 @@ export const textReveal = (trigger, item) => {
   const animateIn = gsap.timeline({
     scrollTrigger: {
       trigger: trigger,
-      start: "top center",
+      start: "top 80%",
       toggleActions: "play none none reverse",
+      markers: true,
     }
   });
 

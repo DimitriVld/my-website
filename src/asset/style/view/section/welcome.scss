@@ -17,6 +17,13 @@
       flex-direction: column;
       justify-content: center;
     }
+
+    > div {
+
+      @include tabletPortraitMin {
+        width: 50%;
+      }
+    }
   }
 
   &.home {
@@ -68,6 +75,7 @@
   }
 
   &-subtitle {
+    margin-top: 20px;
       color: $color-white;
       z-index: 1;
   }

@@ -15,9 +15,8 @@ const DefaultLayout = (props) => {
 
     setTlMenu(
       gsap.timeline()
-      .to(menuElement, .5, {bottom: 0})
-      .to(menuElement, .6, { width: '100%', ease: "expo"})
-      .staggerTo(menuLinksArr, .8, {opacity: 0.4, transform: 'translateX(0)'}, 0.2)
+      .to(menuElement, .4, { width: '100%', ease: "expo"})
+      .staggerTo(menuLinksArr, .6, {opacity: 0.4, transform: 'translateX(0)'}, 0.2)
     )
   }
 
