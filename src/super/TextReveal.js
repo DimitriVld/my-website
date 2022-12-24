@@ -30,7 +30,6 @@ export const textReveal = (trigger, item) => {
       trigger: trigger,
       start: "top 80%",
       toggleActions: "play none none reverse",
-      markers: true,
     }
   });
 
