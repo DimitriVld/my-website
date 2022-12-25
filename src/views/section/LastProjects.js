@@ -11,7 +11,7 @@ import Desktop from '../icon/Desktop';
 gsap.registerPlugin(ScrollTrigger);
 
 const LastProjects = () => {
-  const [lastProjects, setLastProjects] = useState(null);
+  const [lastProjects, setLastProjects] = useState([]);
   const {t} = useTranslation('common');
   const context = useContext(AppContext);
 
