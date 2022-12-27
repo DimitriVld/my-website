@@ -5,7 +5,11 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  padding-top: 100px;
+  padding: 150px 0 50px;
+
+  @include tabletPortrait {
+    height: auto;
+  }
 
   .container {
     max-width: 800px;

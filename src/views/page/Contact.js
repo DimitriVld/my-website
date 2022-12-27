@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import LogoIcon from '../icon/Logo';
 import emailjs from '@emailjs/browser';
 
@@ -29,8 +29,8 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <div className='p-contact-inputGroup'>
             <fieldset>
-              <label className='p-contact-label display-b'>{t('page.contact.name.label')}</label>
-              <input className='p-contact-input' name='name' type='text' placeholder={t('page.contact.name.placeholder')}/>
+              <label className='p-contact-label display-b'>{t('page.contact.name.label')}*</label>
+              <input className='p-contact-input' name='name' type='text' placeholder={t('page.contact.name.placeholder')} required/>
             </fieldset>
 
             <fieldset>
@@ -40,8 +40,8 @@ const Contact = () => {
           </div>
           <div className='p-contact-inputGroup'>
             <fieldset>
-              <label className='p-contact-label display-b'>{t('page.contact.email.label')}</label>
-              <input className='p-contact-input' name='email' type='text' placeholder={t('page.contact.email.placeholder')} />
+              <label className='p-contact-label display-b'>{t('page.contact.email.label')}*</label>
+              <input className='p-contact-input' name='email' type='text' placeholder={t('page.contact.email.placeholder')} required/>
             </fieldset>
 
             <fieldset>
@@ -50,8 +50,8 @@ const Contact = () => {
             </fieldset>
           </div>
           <fieldset>
-            <label className='p-contact-label display-b'>{t('page.contact.message.label')}</label>
-            <textarea className='p-contact-textarea' name='message' placeholder={t('page.contact.message.placeholder')}></textarea>
+            <label className='p-contact-label display-b'>{t('page.contact.message.label')}*</label>
+            <textarea className='p-contact-textarea' name='message' placeholder={t('page.contact.message.placeholder')} required></textarea>
           </fieldset>
 
           <button className='p-contact-btn ui-button js-p-contact-btn js-cursor-pointer' type='submit'>{t('page.contact.button')}</button>
