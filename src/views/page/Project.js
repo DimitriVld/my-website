@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import axios from 'axios';
@@ -29,6 +30,11 @@ const Project = () => {
     <div className={'p-project'}>
       {project &&
       <div className='container'>
+        <Link className='p-project-back js-cursor-pointer' to={'/projects'}>
+          <ArrowRightIcon />
+          <span>{t('section.lastProjects.button')}</span>
+        </Link>
+
         <div className='p-project-header'>
           <p className='p-project-type'>{project?.attributes.Type}</p>
           <h3 className='p-project-title ui-h1 is-medium'>{project?.attributes.Title}</h3>

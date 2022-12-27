@@ -108,7 +108,9 @@ const LastProjects = () => {
 
                 <div className="s-lastProjects-description">
                   <p className='js-s-lastProjects-text'>{project.attributes.Intro}</p>
-                  <Link className='ui-button js-s-lastProjects-text js-cursor-pointer' to={`/project/${project.id}`}>{t('section.lastProjects.discover')}</Link>
+                  <div className='js-cursor-pointer'>
+                    <Link className='ui-button js-s-lastProjects-text' to={`/project/${project.attributes.projectId}`}>{t('section.lastProjects.discover')}</Link>
+                  </div>
                 </div>
               </li>
             </div>
