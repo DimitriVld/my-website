@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-import AppContext from '../../context/AppContext';
 import LogoIcon from '../icon/Logo';
 import BurgerIcon from '../icon/Burger';
 import LinkedinIcon from '../icon/Linkedin';
 import EmailIcon from '../icon/Email';
 
 const Header = (props) => {
+  // eslint-disable-next-line no-unused-vars
   const [t, i18n] = useTranslation('common');
 
   return (

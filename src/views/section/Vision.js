@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import { gsap } from "gsap/all";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { textReveal } from '../../super/TextReveal';
+import LinkedinIcon from '../icon/Linkedin';
+import EmailIcon from '../icon/Email';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,8 +91,15 @@ const Vision = () => {
           <h3 className='ui-h1 is-medium js-textReveal-text' data-text={t('section.vision.title')}>
             <span>{t('section.vision.title')}</span>
           </h3>
-          <img className="icon" src="./images/img-dv.jpg" alt="icon" />
-          <a href='/' className='js-s-vision-btn'>{t('section.vision.info')}</a>
+          <div className='s-vision-btnWrap'>
+            <a href="mailto:contact@dimitri-dev.com" className='s-vision-btn is-white js-cursor-pointer'>
+              <EmailIcon />
+            </a>
+            <a href='https://www.linkedin.com/in/dimitrivildina/' className='s-vision-btn is-white js-cursor-pointer'>
+              <LinkedinIcon />
+            </a>
+          </div>
+          <a href='./images/cv-dimitri-vildina.pdf' className='s-vision-cv js-s-vision-btn js-cursor-pointer' download={true}>{t('section.vision.info')}</a>
         </div>
 
         <div className='description js-s-vision-description'>

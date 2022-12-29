@@ -2,93 +2,72 @@
   position: relative;
     padding: 50px 0;
 
-    .container {
+    &-btnWrap {
       display: flex;
-      flex-direction: row-reverse;
+      margin-top: 30px;
+    }
 
-      @include tabletPortrait {
-        flex-direction: column;
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      background-color: $color-white;
+      border-radius: 100%;
+      margin-left: 10px;
+  
+      span {
+        line-height: 0;
       }
     }
+
+    &-cv {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: $color-blue;
+      color: $color-white;
+      white-space:nowrap;
+      width: fit-content;
+  }
 
     .bg{
         position: absolute;
         bottom: 0;
-        right: 0;
+        left: 0;
         height: 100%;
-        width: calc(25% + 60px);
+        width: 50%;
         background-color: rgba($color-blue, .10);
         z-index: -1;
+
+        @include tabletPortrait {
+          width: 100%;
+          height: 50%;
+          bottom: initial;
+          top: 0;
+        }
     }
 
     .title{
-        flex: 1 25%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         height: fit-content;
 
         h3{
             font-weight: 600;
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: flex-end;
-            margin-right: 60%;
-            white-space:nowrap;
-
-            @include tabletPortrait {
-              margin-right: 0;
-            }
-
-            hr{
-                width: 30px;
-                border: 1px solid $color-black-4;
-                margin: auto 0 auto 23px;
-            }
-        }
-
-        img{
-            margin-top: 70px;
-            height: 100%;
-            width: 100%;
-
-            @include tabletPortrait {
-              height: 450px;
-              object-fit: cover;
-            }
-        }
-
-        a{
-            margin-top: 60px;
-            margin-right: 60%;
-            padding: 12px 30px;
-            background-color: $color-blue;
-            color: $color-white;
-            white-space:nowrap;
-
-            @include tabletPortrait {
-              margin-right: 0;
-            }
         }
     }
 
     .description{
-        flex: 1 75%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: 78px 78px 78px 0;
-
-        @include tabletPortrait {
-          margin-top: 20px;
-          padding: 0;
-        }
+        margin-top: 60px;
 
         p{
-          width: 75%;
           font-size: 20px;
-          line-height: 30px;
+          line-height: 40px;
 
             @include tabletPortrait {
               text-align: center;
